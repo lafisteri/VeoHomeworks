@@ -1,5 +1,4 @@
-﻿using System;
-namespace task_2
+﻿namespace task_2
 {
     public interface IRequest<TResponse>
     {

@@ -1,10 +1,12 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{4C454A3E-1192-49A6-96C8-95A15ADDDF97}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="task_2/GetSumRequestHandler.cs">
+  <MonoDevelop.Ide.ItemProperties.task__3 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="task_2/Program.cs" Line="18" Column="10" />
-      <File FileName="task_2/IRequest.cs" />
-      <File FileName="task_2/IHandler.cs" />
-      <File FileName="task_2/GetSumRequestHandler.cs" Line="26" Column="2" />
+      <File FileName="task_2/Program.cs" Line="22" Column="14" />
+      <File FileName="task_2/IRequest.cs" Line="1" Column="1" />
+      <File FileName="task_2/IHandler.cs" Line="6" Column="44" />
+      <File FileName="task_2/GetSumRequestHandler.cs" Line="28" Column="2" />
+      <File FileName="task_2/GetSumRequest.cs" Line="16" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,11 +15,16 @@
             <Node name="task_2" expanded="True">
               <Node name="GetSumRequestHandler.cs" selected="True" />
             </Node>
+            <Node name="task_3" expanded="True" />
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>item.ToString()</Value>
+          <Value>typeof(T).BaseType</Value>
+          <Value>t</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -25,9 +32,12 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.task__2 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders>
+    <String>/Users/anton/Projects/VeoHomeworks</String>
+  </Debugger.DebugSourceFolders>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/anton/Projects/VeoHomeworks/Lesson_1/task_2/GetSumRequestHandler.cs" relfile="task_2/GetSumRequestHandler.cs" line="22" column="1" />
+      <Breakpoint file="/Users/anton/Projects/VeoHomeworks/Lesson_1/task_3/92qn62ez.75n~" relfile="task_3/92qn62ez.75n~" line="18" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace task_3
 {
@@ -45,11 +46,59 @@ TmpConsole.Base
 
 3.2(**) - Аналогично заданию 3.1, но метод PrintType должен остаться без изменений
      */
-    class Program
+
+
+
+    /*class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+    }*/
+
+    class Base { }
+
+    class A : Base { }
+
+    class B : Base { }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var list = new List<Base>()
+        {
+            new A(),
+            new B(),
+            new A()
+        };
+            Console.WriteLine("Original");
+            foreach (var item in list)
+            {
+                PrintType(item);
+            }
+            Console.WriteLine("3.1(*)");
+            foreach (var item in list)
+            {
+                PrintType2(item);
+            }
+
+            Console.WriteLine("3.2(**)");
+            foreach (var item in list)
+            {
+                PrintType<Base>(item);
+            }
+        }
+
+        private static void PrintType<T>(T item)
+        {
+            Console.WriteLine(typeof(T));
+        }
+
+        private static void PrintType2<T>(T item)
+        {
+            Console.WriteLine(item.GetType());
         }
     }
 }

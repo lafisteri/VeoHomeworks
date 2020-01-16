@@ -11,16 +11,18 @@ namespace task_2
 
         public TResponse Handle(TRequest request)
         {
-            var sum = 0;
+            throw new NotImplementedException();
+
+        }
+
+        public int GetSumRequest(TRequest request)
+        {
+            int sum = 0;
             foreach (var item in request)
             {
                 sum += (int)item;
             }
-            //var sum2 = request.GetEnumerator().ToString();
-
-
-            throw new NotImplementedException();
-
+            return sum;
         }
     }
 }

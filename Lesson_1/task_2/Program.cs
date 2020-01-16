@@ -16,10 +16,15 @@ namespace task_2
     {
         static void Main(string[] args)
         {
-            GetSumRequest request = new GetSumRequest(5);
-            //Console.WriteLine(request.ToString());
+            //-создать класс GetSumReuqest, который будет содержать массив целых чисел
+            GetSumRequest<int> request = new GetSumRequest<int>(5);
+            foreach (var item in request.Numbers)
+            {
+                Console.WriteLine(item);
+            }
+            //-создать класс обработчик GetSumRequestHandler, который будет обрабатывать запрос GetSumReuqesе и возвращать сумму переданных чисел
             GetSumRequestHandler<int[], int> getSum = new GetSumRequestHandler<int[], int>();
-            getSum.Handle(request.Numbers);
+            Console.WriteLine("GetSumRequest " + getSum.GetSumRequest(request.Numbers));
         }
     }
 }

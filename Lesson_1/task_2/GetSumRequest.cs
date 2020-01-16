@@ -1,7 +1,7 @@
 ﻿using System;
 namespace task_2
 {
-    public class GetSumRequest
+    public class GetSumRequest<TResponse> : IRequest<TResponse>
     {
         public int[] Numbers { get; }
 
@@ -13,17 +13,6 @@ namespace task_2
             {
                 Numbers[i] = randNumber.Next(20);
             }
-        }
-
-        public override string ToString()
-        {
-            string result = null;
-            for (int i = 0; i < Numbers.Length; i++)
-            {
-                result += Numbers[i] + ",";
-            }
-
-            return result;
         }
     }
 }
