@@ -1,26 +1,13 @@
-﻿using System;
-using System.Collections;
-
-namespace task_2
+﻿namespace task_2
 {
-    public class GetSumRequestHandler<TRequest, TResponse> : IHandler<TRequest, TResponse> where TRequest : IEnumerable
+    public class GetSumRequestHandler : IHandler<GetSumRequestInt, int>
     {
-        public GetSumRequestHandler()
-        {
-        }
-
-        public TResponse Handle(TRequest request)
-        {
-            throw new NotImplementedException();
-
-        }
-
-        public int GetSumRequest(TRequest request)
+        public int Handle(GetSumRequestInt request)
         {
             int sum = 0;
-            foreach (var item in request)
+            foreach (var item in request.Numbers)
             {
-                sum += (int)item;
+                sum += item;
             }
             return sum;
         }

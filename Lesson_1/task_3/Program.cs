@@ -77,7 +77,10 @@ TmpConsole.Base
             }
 
             Console.WriteLine("\n3.2(**)");
-            PrintType(new A());
+            foreach (var item in list)
+            {
+                PrintType((dynamic)item);
+            }
         }
 
         private static void PrintType<T>(T item)

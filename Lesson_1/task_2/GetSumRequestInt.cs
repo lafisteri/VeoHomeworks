@@ -1,11 +1,11 @@
 ﻿using System;
 namespace task_2
 {
-    public class GetSumRequest<TResponse> : IRequest<TResponse>
+    public class GetSumRequestInt : IRequest<int>//запрос на который нужно вернуть int
     {
         public int[] Numbers { get; }
 
-        public GetSumRequest(int size)
+        public GetSumRequestInt(int size)
         {
             var randNumber = new Random();
             Numbers = new int[size];

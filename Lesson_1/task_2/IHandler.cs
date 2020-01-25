@@ -1,7 +1,6 @@
-﻿using System;
-namespace task_2
+﻿namespace task_2
 {
-    public interface IHandler<TRequest, TResponse> : IRequest<TResponse>
+    public interface IHandler<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
         TResponse Handle(TRequest request);
     }
